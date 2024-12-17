@@ -1,4 +1,4 @@
-package pkg
+package bitmap
 
 import (
 	"encoding/binary"

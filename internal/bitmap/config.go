@@ -1,4 +1,4 @@
-package pkg
+package bitmap
 
 type BMPHeader struct {
 	FileType   [2]byte
