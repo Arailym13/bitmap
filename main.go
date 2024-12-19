@@ -3,7 +3,6 @@ package main
 import (
 	"bitmap/internal/handlers"
 	"bitmap/utils"
-	"fmt"
 	"os"
 )
 
@@ -17,9 +16,9 @@ func main() {
 	case "header":
 		// fmt.Println(strings.Split(args[1], ".bmp"))
 		// fmt.Println("Length:", len(strings.Split(args[1], ".bmp")[0]))
-		handlers.HandleHeader(args)
+		handlers.HandleHeader(args[1:])
 	case "apply":
-		fmt.Println("Apply")
+		handlers.HandleApply(args[1:])
 	default:
 		utils.DisplayUsage()
 	}
